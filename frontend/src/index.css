@@ -1,0 +1,72 @@
+@import "tailwindcss"; 
+
+/* Theme variables */
+:root {
+  --bg-primary: #f4f0fa;
+  --text-primary: #333333;
+  --bg-secondary: #ffffff;
+  --accent-color: #6c63ff;
+  --accent-hover: #5848d5;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --input-bg: #ffffff;
+  --input-border: #e2e8f0;
+  --navbar-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a2e;
+  --text-primary: #e2e8f0;
+  --bg-secondary: #16213e;
+  --accent-color: #6c63ff;
+  --accent-hover: #8A7EFF;
+  --card-bg: #0f3460;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --input-bg: #1e293b;
+  --input-border: #334155;
+  --navbar-bg: #0f3460;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: var(--navbar-bg);
+  transition: background-color 0.3s ease;
+}
+
+.user-logo {
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: var(--card-bg);
+  padding: 10px;
+  border: 1px solid var(--input-border);
+}
+
+.form-container {
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid var(--input-border);
+  background-color: var(--card-bg);
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--input-border);
+}
+  
