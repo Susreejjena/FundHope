@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Create axios instance with base URL from environment variables
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://fundhope.onrender.com';
 // Base URL for the server (without /api)
 export const BASE_URL = API_URL.replace(/\/api$/, '');
 
